@@ -1,30 +1,7 @@
 import 'package:flutter/material.dart';
 import 'main.dart'; // Import to use kPrimaryColor and other constants
-
-// For now, we'll create placeholder pages for navigation
-class DepositsPage extends StatelessWidget {
-  const DepositsPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Deposits')),
-      body: const Center(child: Text('Deposits List View')),
-    );
-  }
-}
-
-class WithdrawalsPage extends StatelessWidget {
-  const WithdrawalsPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Withdrawals')),
-      body: const Center(child: Text('Withdrawals List View')),
-    );
-  }
-}
+import 'pages/deposits_page.dart';
+import 'pages/withdrawals_page.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
